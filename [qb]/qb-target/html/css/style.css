@@ -1,0 +1,37 @@
+body {
+    overflow: hidden;
+}
+
+#target-eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 2.9vh;
+    text-shadow: 0.1vh 0.1vh 0.1vh #000000;
+}
+
+#target-label-wrapper {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    left: 86.5vh;
+    width: fit-content;
+    height: 100%;
+    top: 53.25%;
+}
+
+#target-label {
+    list-style: none;
+    font-size: 1.3vh;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.7px;
+    color: white;
+    user-select: none;
+    white-space: nowrap;
+    font-variant: small-caps;
+    text-shadow: 0.1vh 0.1vh 0.1vh #000000;
+}

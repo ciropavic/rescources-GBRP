@@ -1,0 +1,5 @@
+RegisterServerEvent("megaphone:toggle")
+AddEventHandler("megaphone:toggle", function(pEnable)
+    print(pEnable)
+    TriggerClientEvent("megaphone:toggle", -1, source, pEnable)
+end)

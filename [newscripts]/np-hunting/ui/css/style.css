@@ -1,0 +1,13 @@
+html, body{
+    margin:0;
+    height:100%;
+}
+
+.container-scope {
+    background-image: url("../img/sniper_scope.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 99;
+}
