@@ -37,7 +37,7 @@ end)
 
 RegisterKeyMapping('answer', '[PHONE] Answer Phone', 'keyboard', 'U')
 RegisterKeyMapping('hangup', '[PHONE] Hangup Phone', 'keyboard', 'J')
-RegisterKeyMapping('phone', '[PHONE] Open Phone', 'keyboard', 'M')
+RegisterKeyMapping('phone', '[PHONE] Open Phone', 'keyboard', 'P')
 
 phoneProp = 0
 local phoneModel = `prop_npc_phone_02`
@@ -388,6 +388,7 @@ end)
 function OpenPhone()
     QBCore.Functions.TriggerCallback('qb-phone:server:HasPhone', function(HasPhone)
         if HasPhone then
+            SetRadarBigmapEnabled(false, false)
             PhoneData.PlayerData = QBCore.Functions.GetPlayerData()
     	    SetNuiFocus(true, true)
             SendNUIMessage({
