@@ -4105,7 +4105,7 @@ QBShared.Vehicles = {
 
 	
 	["r8h"] = {
-		["name"] = "Audi R8",
+		["name"] = "R8",
 		["brand"] = "Audi",
 		["model"] = "r8h",
 		["price"] = 1000000,
@@ -4114,7 +4114,7 @@ QBShared.Vehicles = {
 		["shop"] = "luxury",
 	},
 	["rr14"] = {
-		["name"] = "Range Rover 7 Seater",
+		["name"] = "7 Seater",
 		["brand"] = "Range Rover",
 		["model"] = "rr14",
 		["price"] = 450000,
@@ -4123,7 +4123,7 @@ QBShared.Vehicles = {
 		["shop"] = "luxury",
 	},
 	["m4"] = {
-		["name"] = "BMW M4",
+		["name"] = "M4",
 		["brand"] = "BMW",
 		["model"] = "m4",
 		["price"] = 1000000,
@@ -4132,7 +4132,7 @@ QBShared.Vehicles = {
 		["shop"] = "luxury",
 	},
 	["r32"] = {
-		["name"] = "Nissan R32",
+		["name"] = "R32",
 		["brand"] = "Nissan",
 		["model"] = "r32",
 		["price"] = 400000,

@@ -388,7 +388,6 @@ end)
 function OpenPhone()
     QBCore.Functions.TriggerCallback('qb-phone:server:HasPhone', function(HasPhone)
         if HasPhone then
-            SetRadarBigmapEnabled(false, false)
             PhoneData.PlayerData = QBCore.Functions.GetPlayerData()
     	    SetNuiFocus(true, true)
             SendNUIMessage({

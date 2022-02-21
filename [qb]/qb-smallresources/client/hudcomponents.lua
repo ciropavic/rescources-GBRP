@@ -41,6 +41,7 @@ Citizen.CreateThread(function()
         HideHudComponentThisFrame(21)
 		HideHudComponentThisFrame(22)
 		DisableControlAction(1, 37)
+		DisableControlAction(1, 199)
 		DisplayAmmoThisFrame(true)
 
 		Citizen.Wait(4)
