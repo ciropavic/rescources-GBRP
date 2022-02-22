@@ -8,5 +8,5 @@ Config.DynamicOxygen = true // true or false, set to false if you want it persis
 Config.DynamicStress = true // true or false, set to false if you want it persistent
 Config.DynamicNitro = true // true or false, set to false if you want it persistent
 Config.DynamicEngine = true // true or false, set to false if you want it persistent
-Config.EngineType = "np" // "new" or "np" engine set to np if you want np 3.0 style
+Config.EngineType = "new" // "new" or "np" engine set to np if you want np 3.0 style
 
