@@ -18,9 +18,9 @@ bennyGarages = {
 
 vehicleCustomisationPrices = {
     cosmetics = {price = 0},
-    respray = {price = 0},
-    performance = {prices = {0, 0, 0, 0, 0, 0}},
-    turbo = {price = 0},
+    respray = {price = 25},
+    performance = {prices = {2500, 6500, 15000, 20000, 30000, 44500}},
+    turbo = {price = 90000},
     wheels = {price = 0},
     customwheels = {price = 0},
     wheelsmoke = {price = 0},

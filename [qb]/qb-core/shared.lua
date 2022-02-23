@@ -2310,15 +2310,6 @@ QBShared.Vehicles = {
 		["hash"] = `seven70`,
 		["shop"] = "pdm",
 	},
-	["slamvan3"] = {
-		["name"] = "Slam Van Custom",
-		["brand"] = "Vapid",
-		["model"] = "slamvan3",
-		["price"] = 17000,
-		["category"] = "muscle",
-		["hash"] = `slamvan3`,
-		["shop"] = "pdm",
-	},
 	["sovereign"] = {
 		["name"] = "Sovereign",
 		["brand"] = "WMC",
@@ -3698,15 +3689,6 @@ QBShared.Vehicles = {
 		["price"] = 30000,
 		["category"] = "muscle",
 		["hash"] = `slamvan`,
-		["shop"] = "pdm",
-	},
-	["slamvan2"] = {
-		["name"] = "Lost Slam Van",
-		["brand"] = "Vapid",
-		["model"] = "slamvan2",
-		["price"] = 90000,
-		["category"] = "muscle",
-		["hash"] = `slamvan2`,
 		["shop"] = "pdm",
 	},
 	["speedo"] = {
