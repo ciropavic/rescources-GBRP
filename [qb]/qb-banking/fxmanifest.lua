@@ -1,34 +1,25 @@
 fx_version 'cerulean'
-game 'gta5'
+games { 'gta5' }
 
-description 'qb-Banking'
-version '1.0.0'
-
-shared_scripts { 
-	'@qb-core/import.lua',
-	'config/config.lua',
-}
-
-server_scripts {
-    'server/wrappers/business.lua',
-    'server/wrappers/useraccounts.lua',
-    'server/wrappers/gangs.lua',
-    'server/main.lua'
+shared_scripts {
+    '@qb-core/import.lua',
+    'lua/shared/sh_*.lua',
 }
 
 client_scripts {
-    'client/main.lua',
-    'client/nui.lua'
+    'lua/client/*.lua'
 }
 
-ui_page 'nui/index.html'
+server_scripts {
+    'lua/server/*.lua',
+}
+
+ui_page 'html/index.html'
 
 files {
-    'nui/images/logo.png',
-    'nui/scripting/jquery-ui.css',
-    'nui/scripting/external/jquery/jquery.js',
-    'nui/scripting/jquery-ui.js',
-    'nui/style.css',
-    'nui/index.html',
-    'nui/qb-banking.js',
+	'html/index.html',
+    'html/app.js',
+    'html/img/*.png',
+    'html/img/*.jpg',
+    'html/css/*.css'
 }

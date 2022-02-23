@@ -1,85 +1,128 @@
-# qb-banking
+# simple-banking used with QBCore Framework
+# All credits for this go to https://github.com/Pawsative 
 
-# License
+###### This is by no means a leak, I talked to the original developer of simple banking and we talked about me releasing this for everyone since he is re-coding the banking and he give me his permission to release it. So huge thanks to him.
 
-    QBCore Framework
-    Copyright (C) 2021 Joshua Eger
+###### This banking is NP 3.0 styled banking with business and gang accounts 
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+###### You do not need QB-moneysafe with this banking it has society coded in and only players with specific job/gang and grade can see the business and gang account
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+### Btw qb-target events are already in the cl_bank.lua for thoes who dont use qb-target sorry but you will have to make loops your self
+![Alt text](https://i.imgur.com/Eink1Ox.jpg "In-game screenshot")
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>
 
-## Dependencies
-- [qb-core](https://github.com/qbcore-framework/qb-core)
-- [qb-logs](https://github.com/qbcore-framework/qb-logs) - For keeping records
-
-## Screenshots
-![Account Home](https://i.imgur.com/XazaYYI.png)
-![Debit Card Selection on ATM](https://i.imgur.com/dvJ9hnC.png)
-![Savings Account](https://i.imgur.com/1HFUL06.png)
-![Transfer](https://i.imgur.com/SqADuRg.png)
-![Account Options](https://i.imgur.com/blMgfpG.png)
-
-## Features
-- Debit card (MasterCard/Visa) with PIN
-- Savings Account
-- Detailed interface
-- /atm for players
-- /refreshBanks
-- Business and Gang accounts
-
-## Installation
-### Manual
-- Download the script and put it in the `[qb]` directory.
-- Import `qb-banking.sql` in your database
-- Add the following code to your server.cfg/resouces.cfg
-```
-ensure qb-core
-ensure qb-logs
-ensure qb-banking
+### Using society events to deposit money from other resources/scripts
+```lua
+TriggerEvent('qb-banking:society:server:DepositMoney', src, AMOUNT , JOBNAME)
 ```
 
-## Configuration
+###### first lets start with AMOUNT you need to replace that for example 
+###### You have an event that is passing args like this
+```lua
+ RegisterServerEvent('qb-burgershotjob:server:register', function(id, price)
 ```
-Config = {}
+##### now in the event AMOUNT should be replace with price
+```lua
+TriggerEvent('qb-banking:society:server:DepositMoney', src, price , JOBNAME)
+```
+##### JOBNAME should be replace with the society name if you want to deposit it to police society account replace JOBNAME with 'police'
+```lua
+TriggerEvent('qb-banking:society:server:DepositMoney', src, AMOUNT , 'police')
+```
+### Using the examples above the final triggerevent should look like this
+```lua
+TriggerEvent('qb-banking:society:server:DepositMoney', src, price , 'police')
+```
+###### Now why did i do it with src when its triggering the server event, its because of that event security
+###### A lot of people asked me why is src as an arg to pass to the event so if on that event there is no source or src event wont run so that some dipshit with hack's
+###### cant just keep spaming the event and basicly spawn money into the account.
 
-Config.Blip = {
-    blipName = "Bank", -- Blips name for banks
-    blipType = 108, -- Blip icon for banks
-    blipColor = 37, -- Blip color for banks
-    blipScale = 0.8 -- Blip scale for banks
+### Adding grades to the config, adding override grades to the config
+```lua
+SimpleBanking.Config["business_ranks"] = {  -- Here you add default grades for boss to get access to the account NOTE that grades need to be lower case.
+    ["owner"] = true,
+    ["coowner"] = true,
+    ["chief"] = true,
+    ["boss"] = true,
+}
+```
+###### Same thing goes for gang accounts, You can add default grades under business_ranks and add override grades for example
+```lua
+SimpleBanking.Config["business_ranks_overrides"] = {
+    ["lostmc"] = { -- this is example for adding more then one grade to access the account for gangs
+        ["boss"] = true,
+        ["shot caller"] = true,
     }
-
-Config.ATMModels = { -- Props which will be considered as ATM (Can use /atm nearby)
-        "prop_atm_01",
-        "prop_atm_02",
-        "prop_atm_03",
-        "prop_fleeca_atm"
-    }
-
-Config.BankLocations = { -- Bank locations
-    { ['x'] = 149.9,    ['y'] = -1040.46,   ['z'] = 29.37,  ['bankOpen'] = true, ['bankCooldown'] = 0 },
-    { ['x'] = 314.23,   ['y'] = -278.83,    ['z'] = 54.17,  ['bankOpen'] = true, ['bankCooldown'] = 0 },
-    { ['x'] = -350.8,   ['y'] = -49.57,     ['z'] = 49.04,  ['bankOpen'] = true, ['bankCooldown'] = 0 },
-    { ['x'] = -1213.0,  ['y'] = -330.39,    ['z'] = 37.79,  ['bankOpen'] = true, ['bankCooldown'] = 0 },
-    { ['x'] = -2962.71, ['y'] = 483.0,      ['z'] = 15.7,   ['bankOpen'] = true, ['bankCooldown'] = 0 },
-    { ['x'] = 1175.07,  ['y'] = 2706.41,    ['z'] = 38.09,  ['bankOpen'] = true, ['bankCooldown'] = 0 },
-    { ['x'] = 1653.41,  ['y'] = 4850.6,     ['z'] = 41.99,  ['bankOpen'] = true, ['bankCooldown'] = 0 },
-    
-    -- Pacific Standard Bank
-    { ['x'] = 246.64, ['y'] = 223.20, ['z'] = 106.29, ['bankOpen'] = true, ['bankCooldown'] = 0 },
-    -- Paleto
-    { ['x'] = -113.22, ['y'] = 6470.03, ['z'] = 31.63, ['bankOpen'] = true, ['bankCooldown'] = 0 },
 }
 
-Config.cardTypes = { "visa", "mastercard"} -- Debit card types (When requesting a debit card it gives randomly one of these.)
+SimpleBanking.Config["business_ranks_overrides"] = {
+    ["police"] = { -- example for adding more then one grade to access the account for job
+        ["chief"] = true,
+        ["lieutenant"] = true,
+        ["sergeant"] = true,
+    }
+}
+
 ```
+###### If you are using ms-peds here is the config for peds in banks around the map
+```lua
+	-- BANK PED'S
+	{
+		model = `ig_bankman`,
+		coords = vector4(241.44, 227.19, 106.29, 170.43),
+		gender = 'male', 
+		animDict = 'anim@heists@prison_heiststation@cop_reactions',
+		animName = 'cop_b_idle'
+	},
+	{
+		model = `ig_bankman`,
+		coords = vector4(313.84, -280.58, 54.16, 338.31), 
+		gender = 'male', 
+		animDict = 'anim@heists@prison_heiststation@cop_reactions',
+		animName = 'cop_b_idle'
+	},
+	{
+		model = `ig_bankman`, 
+		coords = vector4(149.46, -1042.09, 29.37, 335.43), 
+		gender = 'male', 
+		animDict = 'anim@heists@prison_heiststation@cop_reactions',
+		animName = 'cop_b_idle'
+	},
+	{
+		model = `ig_bankman`, 
+		coords = vector4(-351.23, -51.28, 49.04, 341.73), 
+		gender = 'male', 
+		animDict = 'anim@heists@prison_heiststation@cop_reactions',
+		animName = 'cop_b_idle'
+	},
+	{
+		model = `ig_bankman`, 
+		coords = vector4(-1211.9, -331.9, 37.78, 20.07), 
+		gender = 'male', 
+		animDict = 'anim@heists@prison_heiststation@cop_reactions',
+		animName = 'cop_b_idle'
+	},
+	{
+		model = `ig_bankman`, 
+		coords = vector4(-2961.14, 483.09, 15.7, 83.84), 
+		gender = 'male', 
+		animDict = 'anim@heists@prison_heiststation@cop_reactions',
+		animName = 'cop_b_idle'
+	},
+	{
+		model = `ig_bankman`, 
+		coords = vector4(1174.8, 2708.2, 38.09, 178.52), 
+		gender = 'male', 
+		animDict = 'anim@heists@prison_heiststation@cop_reactions',
+		animName = 'cop_b_idle'
+	},
+	{
+		model = `ig_bankman`, 
+		coords = vector4(-112.22, 6471.01, 31.63, 134.18), 
+		gender = 'male', 
+		animDict = 'anim@heists@prison_heiststation@cop_reactions',
+		animName = 'cop_b_idle'
+	},
+
+```
+
