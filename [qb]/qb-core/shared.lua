@@ -829,6 +829,16 @@ QBShared.Jobs = {
             },
         },
 	},
+	["dev"] = {
+		label = "Developer",
+		defaultDuty = true,
+		grades = {
+            ['0'] = {
+                name = "Basic Bitch",
+                payment = 69
+            },
+        },
+	},
 	["police"] = {
 		label = "Law Enforcement",
 		defaultDuty = true,
