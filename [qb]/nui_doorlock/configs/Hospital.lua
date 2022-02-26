@@ -110,24 +110,6 @@ table.insert(Config.DoorList, {
     -- autoLock = 1000
 })
 
--- wardadoorone
-table.insert(Config.DoorList, {
-	audioRemote = false,
-	lockpick = false,
-	authorizedJobs = { ['ambulance']=0 },
-	locked = true,
-	doors = {
-		{objHash = -1700911976, objHeading = 340.00003051758, objCoords = vector3(305.2219, -582.3056, 43.43391)},
-		{objHash = -434783486, objHeading = 340.00003051758, objCoords = vector3(302.8031, -581.4246, 43.43391)}
- },
-	slides = false,
-	maxDistance = 2.5,        
-    -- oldMethod = true,
-    -- audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-    -- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-    -- autoLock = 1000
-})
-
 -- receptiondoor
 table.insert(Config.DoorList, {
 	fixText = false,
