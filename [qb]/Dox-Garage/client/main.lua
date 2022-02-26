@@ -537,7 +537,7 @@ AddEventHandler('ambulance:garage', function(pd)
                     TriggerEvent("vehiclekeys:client:SetOwner", GetVehicleNumberPlateText(veh))
                     SetVehicleEngineOn(veh, true, true)
                 end, coords, true)
-            elseif  vehicle == 'as5' then
+            elseif  vehicle == 'lasbike' then
                 QBCore.Functions.SpawnVehicle(vehicle, function(veh)
                     SetVehicleNumberPlateText(veh, "ZULU"..tostring(math.random(1000, 9999)))
                     exports['LegacyFuel']:SetFuel(veh, 100.0)
@@ -698,7 +698,7 @@ RegisterNetEvent('garage:ambulance', function()
             }
         },
         {
-            id = 7,
+            id = 8,
             header = "Search And Rescue",
             txt = "Mercedes shed on wheels",
             params = {
@@ -710,7 +710,7 @@ RegisterNetEvent('garage:ambulance', function()
             }
         },
         {
-            id = 7,
+            id = 9,
             header = "CMO // High Command",
             txt = "Mercedes Sprinter Special Version",
             params = {
@@ -722,7 +722,7 @@ RegisterNetEvent('garage:ambulance', function()
             }
         },
         {
-            id = 9,
+            id = 10,
             header = "Store Vehicle",
             txt = "Store Vehicle Inside Garage",
             params = {

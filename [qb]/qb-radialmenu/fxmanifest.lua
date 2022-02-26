@@ -1,33 +1,32 @@
-fx_version 'adamant'
-games { 'gta5' }
-client_script {
-    "config.lua",
-    "client_menu.lua",
-	"utils.lua"
+fx_version 'cerulean'
+game 'gta5'
+
+description 'qb-RadialMenu'
+version '1.0.0'
+
+ui_page 'html/index.html'
+
+shared_scripts { 
+	'@qb-core/import.lua',
+	'config.lua'
 }
 
-shared_script '@qb-core/import.lua'
-shared_script '@qb-garages/SharedConfig.lua'
-ui_page "html/ui.html"
+client_scripts {
+    'client/main.lua',
+    'client/clothing.lua',
+    'client/trunk.lua',
+    'client/stretcher.lua'
+}
+
+server_scripts {
+    'server/main.lua',
+    'server/trunk.lua',
+    'server/stretcher.lua'
+}
+
 files {
-	"html/ui.html",
-	"html/css/RadialMenu.css",
-	"html/js/RadialMenu.js",
-	'html/css/all.min.css',
-	'html/js/all.min.js',
-	'html/webfonts/fa-brands-400.eot',
-	'html/webfonts/fa-brands-400.svg',
-	'html/webfonts/fa-brands-400.ttf',
-	'html/webfonts/fa-brands-400.woff',
-	'html/webfonts/fa-brands-400.woff2',
-	'html/webfonts/fa-regular-400.eot',
-	'html/webfonts/fa-regular-400.svg',
-	'html/webfonts/fa-regular-400.ttf',
-	'html/webfonts/fa-regular-400.woff',
-	'html/webfonts/fa-regular-400.woff2',
-	'html/webfonts/fa-solid-900.eot',
-	'html/webfonts/fa-solid-900.svg',
-	'html/webfonts/fa-solid-900.ttf',
-	'html/webfonts/fa-solid-900.woff',
-	'html/webfonts/fa-solid-900.woff2',
+    'html/index.html',
+    'html/css/main.css',
+    'html/js/main.js',
+    'html/js/RadialMenu.js',
 }

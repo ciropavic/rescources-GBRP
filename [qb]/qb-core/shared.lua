@@ -869,26 +869,30 @@ QBShared.Jobs = {
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = "Junior Paramedic",
+                name = "Student Paramedic",
                 payment = 100
             },
 			['1'] = {
-                name = "Paramedic",
+                name = "Specialist Paramedic",
                 payment = 200
             },
 			['2'] = {
-                name = "Senior Paramedic",
+                name = "Senior Specialist Paramedic",
                 payment = 300
             },
 			['3'] = {
-                name = "Doctor",
+                name = "Advanced Specialist Paramedic",
                 payment = 400
             },
 			['4'] = {
-                name = "Search And Rescue",
+                name = "Clinical Team Lead",
                 payment = 600
             },
 			['5'] = {
+                name = "General Manager",
+                payment = 600
+            },
+			['6'] = {
                 name = "Chief Medical Officer",
 				isboss = true,
                 payment = 800
