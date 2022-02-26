@@ -25,8 +25,8 @@ body {
     background: #f3f3f3;
     min-height: 800px;
     max-height: 800px;
-    border-top: 5px solid #dc143cbf;
-    border-bottom: 5px solid #dc143cbf;
+    border-top: 5px solid #25b5e0;
+    border-bottom: 5px solid #25b5e0;
     display: none;
    
 }
@@ -71,7 +71,7 @@ body {
 
 .title {
     color: #3e3e3e;
-    border-left: 2px solid #dc143c;
+    border-left: 2px solid #25b5e0;
     font-family: 'Poppins';
     margin-bottom: 28px;
 }
@@ -87,7 +87,7 @@ body {
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff !important;
-    background-color: #dc143c;
+    background-color: #25b5e0;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 0.9rem; }
@@ -105,7 +105,7 @@ a.nav-link{
 }
 
 .account-card {
-    background: rgb(220 20 60);
+    background: hsl(194, 75%, 51%);
     color: white;
 }
 
@@ -118,7 +118,7 @@ a.nav-link{
 .index-card {
     background: rgb(109 109 109);
     color: white;
-    border-top: 7px solid #dc143c;
+    border-top: 7px solid #25b5e0;
 }
 
 .card-text {
@@ -142,7 +142,7 @@ h3.texth3 {
     width: 27px;
     height: 27px;
     border-radius: 50%;
-    background: #dc143c;
+    background: #25b5e0;
     animation: lds-grid 1.2s linear infinite;
     margin-top: 78%;
   }
