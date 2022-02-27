@@ -4,13 +4,13 @@ QB.Spawns = {
 
     ["policedp"] = {
         coords = {
-            x = 428.23, 
-            y = -984.28, 
-            z = 29.76, 
-            h = 3.5 
+            x = 453.93, 
+            y = -661.27, 
+            z = 27.73, 
+            h = 270.02 
         },
         location = "policedp",
-        label = "Police Department",
+        label = "Los Santos Bus Station",
     },
 
     ["paleto"] = {
