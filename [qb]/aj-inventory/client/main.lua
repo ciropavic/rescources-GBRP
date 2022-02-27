@@ -256,13 +256,13 @@ for i=1, 6 do
     RegisterKeyMapping('slot' .. i, 'Uses the item in slot ' .. i, 'keyboard', i)
 end
 
-RegisterKeyMapping('inventory', 'Open Inventory', 'keyboard', 'TAB')
+RegisterKeyMapping('inventory', 'Open Inventory', 'keyboard', 'K')
 
 RegisterCommand('hotbar', function()
     isHotbar = not isHotbar
     ToggleHotbar(isHotbar)
 end)
-RegisterKeyMapping('hotbar', 'Toggles keybind slots', 'keyboard', 'z')
+RegisterKeyMapping('hotbar', 'Toggles keybind slots', 'keyboard', 'TAB')
 
 for i=1, 6 do 
     RegisterCommand('slot' .. i,function()
