@@ -5,7 +5,7 @@ cfg = {
     commandNameEmote = 'e', -- Play an animation by command
     commandNameSuggestion = 'Play an animation by command', -- Play an animation by command suggestion
     keyActive = false, -- Use key for opening the panel
-    keyLetter = 'H', -- Which key for opening the panel if cfg.keyActive is true
+    keyLetter = 'I', -- Which key for opening the panel if cfg.keyActive is true
     keySuggestion = 'Open the emote panel by key', -- Suggestion on keybind mapping
     walkingTransition = 0.5,
 
@@ -43,6 +43,6 @@ cfg = {
     cancelKey = 73, -- Default key for cancelling an animation. Users can change this manually too.
     defaultCommand = 'fav', -- Emote command execution
     defaultEmote = 'dance', -- Default emote by default
-    defaultEmoteUseKey = true, -- Don't recommend setting this to false unless you change UI
+    defaultEmoteUseKey = fales, -- Don't recommend setting this to false unless you change UI
     defaultEmoteKey = 20 -- Default emote command key
 }
