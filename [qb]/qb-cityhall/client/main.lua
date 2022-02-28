@@ -147,7 +147,7 @@ AddEventHandler('joblist', function()
         {
             id = 2,
             header = "Taxi Driver",
-            txt = "Starting Salary - $375",
+            txt = "Starting Salary - £150",
             params = {
                 event = "qb-cityhall:client:Taxijob"
             }
@@ -155,7 +155,7 @@ AddEventHandler('joblist', function()
         {
             id = 3,
             header = "Truck Driver",
-            txt = "Starting Salary - $1250",
+            txt = "Starting Salary - £300",
             params = {
                 event = "qb-cityhall:client:Truckerjob"
             }
@@ -163,7 +163,7 @@ AddEventHandler('joblist', function()
         {
             id = 4,
             header = "Tow Truck Driver",
-            txt = "Starting Salary - $850",
+            txt = "Starting Salary - 325",
             params = {
                 event = "qb-cityhall:client:Towjob"
             }
@@ -171,7 +171,7 @@ AddEventHandler('joblist', function()
         {
             id = 5,
             header = "Garbage Collector",
-            txt = "Starting Salary - $500",
+            txt = "Starting Salary - £275",
             params = {
                 event = "qb-cityhall:client:Garbagejob"
             }
