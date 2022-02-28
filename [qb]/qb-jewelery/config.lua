@@ -2,7 +2,7 @@ Config = Config or {}
 
 Config.Timeout = 30 * (60 * 2000)
 
-Config.RequiredCops = 2
+Config.RequiredCops = 4
 
 Config.JewelleryLocation = {
     ["coords"] = {

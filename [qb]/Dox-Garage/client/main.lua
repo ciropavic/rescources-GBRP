@@ -262,7 +262,7 @@ RegisterNetEvent('garage:menu', function()
     TriggerEvent('nh-context:sendMenu', {
         {
             id = 1,
-            header = "Police Garage",
+            header = "👮 | Police Garage",
             txt = ""
         },
         {
@@ -598,7 +598,7 @@ RegisterNetEvent('garage:ambulance', function()
     TriggerEvent('nh-context:sendMenu', {
         {
             id = 1,
-            header = "Ambulance Garage",
+            header = "🚑 | Ambulance Garage",
             txt = ""
         },
         {
