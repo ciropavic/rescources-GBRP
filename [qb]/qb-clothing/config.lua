@@ -747,111 +747,111 @@ Config.Outfits = {
     ["ambulance"] = {
         ["male"] = {
             [1] = {
-                outfitLabel = "Junior Paramedic",
+                outfitLabel = "Student Paramedic",
                 outfitData = {
                     ["pants"]       = { item = 17,texture = 0},  -- Broek
-                    ["arms"]        = { item = 96, texture = 0},  -- Armen
-                    ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 20, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 22, texture = 6},  -- Jas / Vesten
+                    ["arms"]        = { item = 86, texture = 0},  -- Armen
+                    ["t-shirt"]     = { item = 151, texture = 0},  -- T Shirt
+                  --  ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ["torso2"]      = { item = 22, texture = 0},  -- Jas / Vesten
                     ["shoes"]       = { item = 25, texture = 0},  -- Schoenen
-                --  ["decals"]      = { item = 0, texture = 0},  -- Decals
-               --   ["accessory"]   = { item = 0, texture = 0},  -- Nek / Das
-                    ["bag"]         = { item = 10, texture = 0},  -- Tas
-               --   ["hat"]         = { item = -1, texture = -1},  -- Pet
-                --  ["glass"]       = { item = 0, texture = 0},  -- Bril
-               --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
+                  --  ["decals"]      = { item = 0, texture = 0},  -- Decals
+                   ["accessory"]   = { item = 133, texture = 0},  -- Nek / Das
+                   ["bag"]         = { item = 0, texture = 0},  -- Tas
+                 --   ["hat"]         = { item = -1, texture = -1},  -- Pet
+                  --  ["glass"]       = { item = 0, texture = 0},  -- Bril
+                 --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
                     ["mask"]        = { item = 121, texture = 0},  -- Masker
                 },
             },
             [2] = {
-                outfitLabel = "Paramedic",
+                outfitLabel = "Specialist Paramedic",
                 outfitData = {
                     ["pants"]       = { item = 17,texture = 0},  -- Broek
-                    ["arms"]        = { item = 31, texture = 0},  -- Armen
-                    ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                --  ["vest"]        = { item = 20, texture = 0},  -- Body Vest
+                    ["arms"]        = { item = 86, texture = 0},  -- Armen
+                    ["t-shirt"]     = { item = 151, texture = 0},  -- T Shirt
+                  --  ["vest"]        = { item = 0, texture = 0},  -- Body Vest
                     ["torso2"]      = { item = 22, texture = 1},  -- Jas / Vesten
                     ["shoes"]       = { item = 25, texture = 0},  -- Schoenen
-                --  ["decals"]      = { item = 0, texture = 0},  -- Decals
-               --   ["accessory"]   = { item = 0, texture = 0},  -- Nek / Das
-                --  ["bag"]         = { item = 10, texture = 0},  -- Tas
-               --   ["hat"]         = { item = -1, texture = -1},  -- Pet
-                --  ["glass"]       = { item = 0, texture = 0},  -- Bril
-               --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
+                  --  ["decals"]      = { item = 0, texture = 0},  -- Decals
+                   ["accessory"]   = { item = 133, texture = 0},  -- Nek / Das
+                   ["bag"]         = { item = 0, texture = 0},  -- Tas
+                 --   ["hat"]         = { item = -1, texture = -1},  -- Pet
+                  --  ["glass"]       = { item = 0, texture = 0},  -- Bril
+                 --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
                     ["mask"]        = { item = 121, texture = 0},  -- Masker
                 },
             },
 			[3] = {
-                outfitLabel = "Senior Paramedic",
+                outfitLabel = "Senior Specialist Paramedic",
                 outfitData = {
-                    ["pants"]       = { item = 46,texture = 0},  -- Broek
-                    ["arms"]        = { item = 0, texture = 0},  -- Armen
-                    ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                 -- ["vest"]        = { item = 20, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 43, texture = 1},  -- Jas / Vesten
-                    ["shoes"]       = { item = 10, texture = 0},  -- Schoenen
-                --  ["decals"]      = { item = 0, texture = 0},  -- Decals
-                    ["accessory"]   = { item = 133, texture = 0},  -- Nek / Das
-                    ["bag"]         = { item = 10, texture = 0},  -- Tas
-               --   ["hat"]         = { item = -1, texture = -1},  -- Pet
-                --  ["glass"]       = { item = 0, texture = 0},  -- Bril
-               --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
+                    ["pants"]       = { item = 17,texture = 0},  -- Broek
+                    ["arms"]        = { item = 86, texture = 0},  -- Armen
+                    ["t-shirt"]     = { item = 151, texture = 0},  -- T Shirt
+                  --  ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ["torso2"]      = { item = 22, texture = 2},  -- Jas / Vesten
+                    ["shoes"]       = { item = 25, texture = 0},  -- Schoenen
+                  --  ["decals"]      = { item = 0, texture = 0},  -- Decals
+                   ["accessory"]   = { item = 133, texture = 0},  -- Nek / Das
+                   ["bag"]         = { item = 0, texture = 0},  -- Tas
+                 --   ["hat"]         = { item = -1, texture = -1},  -- Pet
+                  --  ["glass"]       = { item = 0, texture = 0},  -- Bril
+                 --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
                     ["mask"]        = { item = 121, texture = 0},  -- Masker
 				},
 			},
 			[4] = {
-                outfitLabel = "Doctor",
+                outfitLabel = "Advanced Specialist Paramedic",
                 outfitData = {
-                    ["pants"]       = { item = 46,texture = 0},  -- Broek
-                    ["arms"]        = { item = 87, texture = 0},  -- Armen
-                    ["t-shirt"]     = { item = 54, texture = 0},  -- T Shirt
-                --  ["vest"]        = { item = 20, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 328, texture = 1},  -- Jas / Vesten
-                    ["shoes"]       = { item = 10, texture = 0},  -- Schoenen
-                --  ["decals"]      = { item = 0, texture = 0},  -- Decals
+                    ["pants"]       = { item = 17,texture = 0},  -- Broek
+                    ["arms"]        = { item = 86, texture = 0},  -- Armen
+                    ["t-shirt"]     = { item = 151, texture = 0},  -- T Shirt
+                  --  ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ["torso2"]      = { item = 22, texture = 3},  -- Jas / Vesten
+                    ["shoes"]       = { item = 25, texture = 0},  -- Schoenen
+                  --  ["decals"]      = { item = 0, texture = 0},  -- Decals
                    ["accessory"]   = { item = 133, texture = 0},  -- Nek / Das
-                   ["bag"]         = { item = 10, texture = 0},  -- Tas
-              --   ["hat"]         = { item = -1, texture = -1},  -- Pet
-               --  ["glass"]       = { item = 0, texture = 0},  -- Bril
-              --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
-                   ["mask"]        = { item = 121, texture = 0},  -- Masker
+                   ["bag"]         = { item = 0, texture = 0},  -- Tas
+                 --   ["hat"]         = { item = -1, texture = -1},  -- Pet
+                  --  ["glass"]       = { item = 0, texture = 0},  -- Bril
+                 --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
+                    ["mask"]        = { item = 121, texture = 0},  -- Masker
                 },
             },
             [5] = {
-                outfitLabel = "Search And Rescue",
+                outfitLabel = "Clinical Team Lead",
                 outfitData = {
-                    ["pants"]       = { item = 24,texture = 0},  -- Broek
-                    ["arms"]        = { item = 94, texture = 0},  -- Armen
-                    ["t-shirt"]     = { item = 14, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 35, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 21, texture = 0},  -- Jas / Vesten
-                    ["shoes"]       = { item = 97, texture = 0},  -- Schoenen
-                --  ["decals"]      = { item = 0, texture = 0},  -- Decals
-                    ["accessory"]   = { item = 5, texture = 0},  -- Nek / Das
-                    ["bag"]         = { item = 9, texture = 0},  -- Tas
-               --   ["hat"]         = { item = -1, texture = -1},  -- Pet
-                --  ["glass"]       = { item = 0, texture = 0},  -- Bril
-               --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
-                    ["mask"]        = { item = 121, texture = 0},  -- Masker 
+                    ["pants"]       = { item = 17,texture = 0},  -- Broek
+                    ["arms"]        = { item = 86, texture = 0},  -- Armen
+                    ["t-shirt"]     = { item = 151, texture = 0},  -- T Shirt
+                  --  ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ["torso2"]      = { item = 22, texture = 4},  -- Jas / Vesten
+                    ["shoes"]       = { item = 25, texture = 0},  -- Schoenen
+                  --  ["decals"]      = { item = 0, texture = 0},  -- Decals
+                   ["accessory"]   = { item = 133, texture = 0},  -- Nek / Das
+                   ["bag"]         = { item = 0, texture = 0},  -- Tas
+                 --   ["hat"]         = { item = -1, texture = -1},  -- Pet
+                  --  ["glass"]       = { item = 0, texture = 0},  -- Bril
+                 --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
+                    ["mask"]        = { item = 121, texture = 0},  -- Masker
                 },
             },
             [6] = {
-                outfitLabel = "CMO // High Command NHS",
+                outfitLabel = "Chief Medical Officer",
                 outfitData = {
-                    ["pants"]       = { item = 35,texture = 5},  -- Broek
-                    ["arms"]        = { item = 6, texture = 0},  -- Armen
-                    ["t-shirt"]     = { item = 44, texture = 4},  -- T Shirt
-                --  ["vest"]        = { item = 20, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 59, texture = 0},  -- Jas / Vesten
-                    ["shoes"]       = { item = 20, texture = 3},  -- Schoenen
-                --  ["decals"]      = { item = 0, texture = 0},  -- Decals
+                    ["pants"]       = { item = 17,texture = 0},  -- Broek
+                    ["arms"]        = { item = 86, texture = 0},  -- Armen
+                    ["t-shirt"]     = { item = 151, texture = 0},  -- T Shirt
+                  --  ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ["torso2"]      = { item = 13, texture = 0},  -- Jas / Vesten
+                    ["shoes"]       = { item = 25, texture = 0},  -- Schoenen
+                  --  ["decals"]      = { item = 0, texture = 0},  -- Decals
                    ["accessory"]   = { item = 133, texture = 0},  -- Nek / Das
-                -- ["bag"]         = { item = 10, texture = 0},  -- Tas
-              --   ["hat"]         = { item = -1, texture = -1},  -- Pet
-               --  ["glass"]       = { item = 0, texture = 0},  -- Bril
-              --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
-                   ["mask"]        = { item = 121, texture = 0},  -- Masker
+                   ["bag"]         = { item = 0, texture = 0},  -- Tas
+                 --   ["hat"]         = { item = -1, texture = -1},  -- Pet
+                  --  ["glass"]       = { item = 0, texture = 0},  -- Bril
+                 --   ["ear"]         = { item = 0, texture = 0},  -- Oor accessoires
+                    ["mask"]        = { item = 121, texture = 0},  -- Masker
                 },
             },
         },
